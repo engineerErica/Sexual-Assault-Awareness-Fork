@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: #0E142D; 
+}
+
+#logo {
+    height: 100%;
+    width: 10%;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: #0299A4;
+}
+
+.header-links {
+    display: flex;
+    height: 15%;
+    width: 55%;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: #E3DDC9;
+}
