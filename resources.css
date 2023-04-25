@@ -64,7 +64,6 @@ footer {
 .policy {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    border: 1px solid white;
     margin: 0;
 }
 
