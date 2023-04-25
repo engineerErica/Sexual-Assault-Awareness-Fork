@@ -25,6 +25,7 @@ header {
     width: 100%;
     align-items: center;
     color: #0299A4;
+    margin-top: -2em;
 }
 
 .header-links {
@@ -52,7 +53,7 @@ main {
 #stats {
     display: flex;
     justify-content: space-between;
-    margin: 5em auto 5em;
+    margin: 5.5em auto 5.5em;
     width: 92%;
     height: 30em
 }
@@ -123,7 +124,8 @@ main {
     background-color: #0E142D;
     display: flex;
     justify-content: space-around;
-    color: #BCB9AE;
+    color: #A88C66;
+    font-size: 1.7em;
 }
 
 .justice-text {
@@ -131,7 +133,7 @@ main {
     flex-direction: column;
     text-align: center;
     width: 40%;
-    margin-left: 6em;
+    margin-left: 5em;
 }
 
 .lady-justice {
@@ -141,11 +143,11 @@ main {
     background-image: url(./images/ladyjustice.png);
     background-size: cover;
     background-position: 40% 30.5%;
-    box-shadow: 2em 0 2em 0px #0E142D inset
+    box-shadow: 1.5em 0 1.5em 0px #0E142D inset
 }
 
 #not-alone {
-    height: 75em;
+    height: 78em;
     width: 100%;
     background-color: #233041;
     display: flex;
@@ -172,7 +174,7 @@ h1 {
 
 .blurb-wrapper {
     display: flex;
-    border-radius: 25%;
+    border-radius: 2em;
     height: 10em;
     width: 85%;
     background-color: #0E142D;
@@ -182,6 +184,6 @@ h1 {
 
 .alone-blurb {
     margin: auto;
-    color: #0299A4;
+    color: #BCB9AE;
 }
 
