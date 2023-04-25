@@ -50,12 +50,11 @@ main {
     align-items: center;
 }
 
-#stats {
+#stats-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-bottom: 10em;
     margin: 0;
     height: 37em;
     background-size: cover;
@@ -63,6 +62,7 @@ main {
 
 .stats-blur {
     background-image: url(./images/SA-SpeakUp.png);
+    position: absolute;
     width: 100%;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -71,24 +71,12 @@ main {
     background-size: cover;
 }
 
-
-@property --p {
-    syntax: '<number>';
-    inherits: true;
-    initial-value: 1;
+.stats {
+    margin-top: 10em;
+    display: flex;
 }
 
-#pie {
-    display: none;
-    transition-delay: 1s;
-    /*overflow-wrap: anywhere;*/
-    /*text-align: center;*/
-    /*width: 50%;*/
-    /*padding: 5em;*/
-    /*font-size: larger;*/
-}
-
-#stats:hover #pie {
+#stats-wrapper:hover #pie {
     display: flex;
     overflow-wrap: anywhere;
     text-align: center;
@@ -97,9 +85,15 @@ main {
     font-size: larger;
 }
 
-.stats-blur:hover {
+#stats-wrapper:hover .stats-blur {
     filter: blur(8px);
 }
+
+#pie {
+    display: none;
+    transition-delay: 1s;
+}
+
 
 .pie {
     --p: 20;
@@ -154,6 +148,12 @@ main {
     from {
         --p: 0
     }
+}
+
+@property --p {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 1;
 }
 
 #justice {
