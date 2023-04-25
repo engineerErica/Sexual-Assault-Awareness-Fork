@@ -119,7 +119,7 @@ main {
 }
 
 #justice {
-    height: 45em;
+    height: 46.5em;
     width: 100%;
     background-color: #0E142D;
     display: flex;
@@ -187,3 +187,99 @@ h1 {
     color: #BCB9AE;
 }
 
+footer {
+    background-color: #0E142D;
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: 1 / 3;
+    grid-template-rows: 1 / 3;
+}
+
+.policy {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.sitemap {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.copyright {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 490px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 105em;
+        width: 100vw;
+        background-color: #BCB9AE;
+    }
+
+    main {
+        width: 100%;
+        height: 130%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5.5em auto 5.5em;
+        width: 92%;
+        height: 45em;
+    }
+
+
+    #justice {
+        height: 95.5em;
+        width: 100%;
+        background-color: #0E142D;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        color: #A88C66;
+        font-size: 0.8em;
+    }
+
+    .justice-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        margin-left: 4em;
+    }
+
+    .lady-justice {
+        height: 100%;
+        width: 104%;
+        margin: auto auto -0.5em -1em;
+        background-size: cover;
+        background-position: 46% 25.5%;
+        box-shadow: 0 0 0.5em 0.5em #0E142D inset;
+    }
+
+    .blurb-wrapper {
+        display: flex;
+        border-radius: 2em;
+        height: 14em;
+        width: 93%;
+        background-color: #0E142D;
+        color: #BCB9AE;
+        margin: 2em auto 2em auto;
+    }
+
+    .alone-blurb {
+        margin: auto;
+        color: #BCB9AE;
+        font-size: 1em;
+        margin: 0.5em;
+    }
+}
