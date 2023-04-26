@@ -175,7 +175,6 @@ main {
 }
 
 #justice {
-    height: 27.5em;
     width: 95%;
     background-color: #0E142D;
     display: flex;
@@ -200,7 +199,7 @@ main {
     margin-left: 5em;
     background-image: url(./images/ladyjustice.png);
     background-size: cover;
-    background-position: 40% 40.5%;
+    background-position: 40% 55.5%;
     border-radius: 2em;
     box-shadow: 1.5em 0 1.5em 0px #0E142D inset;
 }
