@@ -45,6 +45,7 @@ a {
 
 main {
     background-color: #233041;
+    font-size: xx-large;
 }
 
 h2 {
@@ -94,10 +95,13 @@ a:visited {
 
 footer {
     background-color: #0E142D;
+    color: #BCB9AE;
     display: grid;
     justify-content: flex-end;
     grid-template-columns: 1 / 3;
     grid-template-rows: 1 / 3;
+    font-size: x-large;
+    
 }
 
 .policy {
