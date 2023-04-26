@@ -8,10 +8,22 @@ main {
     margin: 0;
     padding: 0;
     justify-content: center;
+    background-color: #233041;
+}
+
+
+h2 {
+    color: #bcb9ae;
+    text-align: center;
+}
+
+h3 {
+    color: #bcb9ae;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 section {
-    background-color: #233041;
     color: #BCB9AE;
     display: grid;
     gap: 20px;
