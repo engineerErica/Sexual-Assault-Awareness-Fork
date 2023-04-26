@@ -1,7 +1,11 @@
+html {
+    margin: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0;
     height: 137em;
     width: 100vw;
     background-color: #BCB9AE;
@@ -48,47 +52,43 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    background-color: #233041;
 }
 
-#stats {
+#stats-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    margin: 0;
-    height: 37em;
-    background-size: cover;
+    width: 95%;
+    height: 43em;
+    padding: 3em 2.2em 1.5em;
+    background-color: #E3DDC9;
 }
 
 .stats-blur {
+    border-radius: 1em;
     background-image: url(./images/SA-SpeakUp.png);
-    width: 100%;
+    position: absolute;
+    width: 95%;
     padding-top: 5em;
-    padding-bottom: 5em;
-    margin: 0;
-    height: 37em;
+    padding-bottom: 4em;
+    margin: auto auto auto;
+    height: 33em;
     background-size: cover;
 }
 
-
-@property --p {
-    syntax: '<number>';
-    inherits: true;
-    initial-value: 1;
+.stats {
+    margin-top: -1.5em;
+    padding-top: 8em;
+    height: 28em;
+    display: flex;
+    margin-left: 2em;
+    width: 95%;
 }
 
-#pie {
-    display: none;
-    transition-delay: 1s;
-    /*overflow-wrap: anywhere;*/
-    /*text-align: center;*/
-    /*width: 50%;*/
-    /*padding: 5em;*/
-    /*font-size: larger;*/
-}
-
-#stats:hover #pie {
+#stats-wrapper:hover #pie {
+    opacity: 1;
+    transition-delay: 0.7s;
     display: flex;
     overflow-wrap: anywhere;
     text-align: center;
@@ -97,8 +97,19 @@ main {
     font-size: larger;
 }
 
-.stats-blur:hover {
+#stats-wrapper:hover .stats-blur {
     filter: blur(8px);
+    transition-delay: 0.6s;
+}
+
+#pie {
+    opacity: 0;
+    transition: 0s;
+    display: flex;
+    background-color: #0E142D;
+    color: #BCB9AE;
+    border-radius: 55%;
+    margin-top: 1em;
 }
 
 .pie {
@@ -139,7 +150,7 @@ main {
 /*  transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));*/
 /*}*/
 .animate {
-    animation: p 1s .5s both;
+    animation: p 3s 1.5s both;
 }
 
 .no-round:before {
@@ -156,21 +167,30 @@ main {
     }
 }
 
+@property --p {
+    transition-delay: 0.6s;
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 1;
+}
+
 #justice {
     height: 27.5em;
-    width: 100%;
+    width: 95%;
     background-color: #0E142D;
     display: flex;
     justify-content: space-around;
     color: #A88C66;
-    font-size: 1.7em;
+    font-size: 1.549em;
+    margin: 2em auto 2em;
+    border-radius: 2em;
 }
 
 .justice-text {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 40%;
+    width: 34%;
     margin-left: 5em;
 }
 
@@ -180,8 +200,9 @@ main {
     margin-left: 5em;
     background-image: url(./images/ladyjustice.png);
     background-size: cover;
-    background-position: 40% 42.5%;
-    box-shadow: 1.5em 0 1.5em 0px #0E142D inset
+    background-position: 40% 40.5%;
+    border-radius: 2em;
+    box-shadow: 1.5em 0 1.5em 0px #0E142D inset;
 }
 
 #not-alone {
@@ -191,6 +212,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: -6em
 }
 
 #imgs-container {
@@ -207,7 +229,8 @@ main {
 
 h1 {
     color: #0299A4;
-    margin-top: 2em;
+    margin-top: 1.4em;
+    font-size: 3em;
 }
 
 .blurb-wrapper {
@@ -249,7 +272,6 @@ footer {
 }
 
 @media (max-width: 490px) {
-
     header {
         display: flex;
         width: 102%;
@@ -300,7 +322,7 @@ footer {
         align-items: center;
     }
 
-    #stats {
+    #stats-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -309,6 +331,30 @@ footer {
         height: 45em;
     }
 
+    .stats {
+        margin-top: -4em;
+        display: flex;
+        flex-direction: column;
+        height: 140%;
+    }
+
+    .stats-blur {
+        display: none;
+    }
+
+    #pie {
+        opacity: 1;
+        transition: 0s;
+        display: flex;
+        flex-direction: column;
+        background-color: #0E142D;
+        color: #BCB9AE;
+        border-radius: 55%;
+        margin-top: 1em;
+        margin: 5px;
+        padding: 6.5em;
+        text-align: center;
+    }
 
     #justice {
         height: 95.5em;
