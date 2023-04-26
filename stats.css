@@ -1,0 +1,16 @@
+#extra-stats {
+    display: grid;
+    padding: 23px;
+    font-size: x-large;
+    width: auto;
+   overflow-wrap: anywhere;
+}
+
+p {
+    margin-bottom: -15px;
+}
+
+main {
+    background-color: #233041;
+    color: #fffDE7;
+}
