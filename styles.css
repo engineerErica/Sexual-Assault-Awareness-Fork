@@ -88,7 +88,7 @@ main {
 
 #stats-wrapper:hover #pie {
     opacity: 1;
-    transition-delay: 0.6s;
+    transition-delay: 0.7s;
     display: flex;
     overflow-wrap: anywhere;
     text-align: center;
@@ -99,7 +99,7 @@ main {
 
 #stats-wrapper:hover .stats-blur {
     filter: blur(8px);
-    transition-delay: 0.3s;
+    transition-delay: 0.6s;
 }
 
 #pie {
