@@ -57,13 +57,6 @@ main {
 }
 
 #stats-wrapper {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* width: 100%; */
-    /* padding-bottom: 10em; */
-    /* margin: 0; */
-    /* height: 37em; */
-    /* background-size: cover; */
     display: flex;
     justify-content: space-between;
     width: 95%;
@@ -73,14 +66,7 @@ main {
 }
 
 .stats-blur {
-    /* background-image: url(./images/SA-SpeakUp.png); */
-    /* position: absolute; */
-    /* width: 100%; */
-    /* padding-top: 5em; */
-    /* padding-bottom: 5em; */
-    /* margin: 0; */
-    /* height: 37em; */
-    /* background-size: cover; */
+    border-radius: 1em;
     background-image: url(./images/SA-SpeakUp.png);
     position: absolute;
     width: 95%;
@@ -243,7 +229,7 @@ main {
 
 h1 {
     color: #0299A4;
-    margin-top: 2em;
+    margin-top: 1.4em;
     font-size: 3em;
 }
 
