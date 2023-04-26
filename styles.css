@@ -281,6 +281,10 @@ footer {
         height: 100%;
         width: 50%;
     }
+    
+    .title {
+        font-size: 2em;
+    }
 
     .header-text {
         display: flex;
@@ -353,7 +357,7 @@ footer {
         border-radius: 55%;
         margin-top: 1em;
         margin: 5px;
-        padding: 6.5em;
+        padding: 4.5em;
         text-align: center;
     }
 
@@ -407,7 +411,7 @@ footer {
         background-color: #0E142D;
         display: grid;
         justify-content: flex-end;
-        margin-top: 49.5%;
-        margin-right: -0.65em;
+        margin-top: 65.5%;
+        margin-right: -0.62em;
     }
 }
