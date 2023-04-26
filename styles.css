@@ -60,7 +60,7 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 5em 0em;
+    padding: 11em 0em;
     background-color: #E3DDC9;
 }
 
@@ -75,9 +75,8 @@ main {
 }
 
 .stats {
-    margin-top: -1.5em;
-    margin-left: 2em;
-    padding-top: 8em;
+    margin-top: -6.7em;
+    padding-top: 6.8em;
     height: 80%;
     width: 85%;
     display: flex;
@@ -88,13 +87,6 @@ main {
 #stats-wrapper:hover #pie {
     opacity: 1;
     transition-delay: 0.7s;
-    /*display: flex;*/
-    /*overflow-wrap: anywhere;*/
-    /*text-align: center;*/
-    /*width: 50%;*/
-    /*padding: 5em;*/
-    /*font-size: larger;*/
-    /*margin-top: 1em;*/
 }
 
 #stats-wrapper:hover .stats-blur {
@@ -112,9 +104,9 @@ main {
     display: flex;
     overflow-wrap: anywhere;
     text-align: center;
-    width: 50%;
-    padding: 5em;
-    font-size: larger;
+    width: 65%;
+    padding: 6.9em;
+    font-size: 120%;
     margin-top: 1em;
 }
 
@@ -188,7 +180,7 @@ main {
     justify-content: space-around;
     color: #A88C66;
     font-size: 1.549em;
-    margin: 2em auto 2em;
+    margin: 2.27em auto 2.7em;
     border-radius: 2em;
 }
 
@@ -350,10 +342,6 @@ footer {
     .stats-blur {
         display: none;
     }
-
-    #stats-wrapper:hover #pie {}
-
-    #stats-wrapper:hover .stats-blur {}
 
     #pie {
         opacity: 1;
