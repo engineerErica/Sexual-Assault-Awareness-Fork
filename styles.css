@@ -300,18 +300,18 @@ footer {
         width: 50%;
     }*/
 
-    .title {
-        font-size: 2em;
-    }
+    /*.title {*/
+    /*    font-size: 2em;*/
+    /*}*/
 
-    .header-text {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        color: #0299A4;
-        margin: 1.5em auto;
-*/
+    /*.header-text {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    width: 100%;*/
+    /*    align-items: center;*/
+    /*    color: #0299A4;*/
+    /*    margin: 1.5em auto;*/
+
 @media (max-width: 490px) {
     
     #logo {
@@ -324,17 +324,10 @@ footer {
         margin-top: 1em;
         font-size: 2em;
     }
-
-    /*.header-links {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
-        width: 100%;
-        padding: 5px 0 0 10px;
-    }*/
     
     .title {
         margin: 0!important;
+        padding: 5px 0 0 10px;
     }
 
     .header-links {
@@ -344,6 +337,7 @@ footer {
         text-align: right;
         grid-column-start: grid-end;
         padding: 0 10px 5px 0;
+        font-size: large;
     }
     
     body {
