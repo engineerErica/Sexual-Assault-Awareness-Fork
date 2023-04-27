@@ -4,11 +4,16 @@ html {
     padding: 0;
 }
 
+body {
+    width: 100%;
+    margin: 0;
+}
+
 header {
     display: grid;
     background-color: #0E142D;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr
+    grid-template-rows: 1fr;
 }
 
 #logo {
