@@ -234,23 +234,23 @@ p {
 
 h1 {
     color: #0299A4;
-    margin-top: 1.4em;
+    margin: 0;
     font-size: 3em;
 }
 
 .blurb-wrapper {
     display: flex;
     border-radius: 2em;
-    height: 10em;
     width: 85%;
     background-color: #0E142D;
-    color: #BCB9AE;
     margin: 2em auto 2em auto;
 }
 
 .alone-blurb {
     margin: auto;
     color: #BCB9AE;
+    font-size: x-large;
+    padding: 20px;
 }
 
 footer {
@@ -322,8 +322,8 @@ footer {
     }
 
     main {
-        width: 102%;
-        height: 130%;
+        /*width: 102%;*/
+        /*height: 130%;*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -403,12 +403,14 @@ footer {
         color: #BCB9AE;
         margin: 2em auto 2em auto;
     }
-
+    
+    p {
+        font-size: small
+    }
+    
     .alone-blurb {
-        margin: auto;
         color: #BCB9AE;
-        font-size: 1em;
-        margin: 0.5em;
+        font-size: small!important
     }
 
     footer {
@@ -416,8 +418,7 @@ footer {
         background-color: #0E142D;
         display: grid;
         justify-content: flex-end;
-        margin-top: 65.5%;
-        margin-right: -0.62em;
+        margin-top: 16em;
     }
 }
 
@@ -440,5 +441,11 @@ footer {
         gap: 5px;
     }
     
+    p {
+        font-size: large
+    }
     
+    .alone-blurb {
+        font-size: large
+    }
 }
