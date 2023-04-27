@@ -270,44 +270,35 @@ footer {
 }
 
 @media (max-width: 490px) {
-    header {
-        display: flex;
-        width: 102%;
-        height: 9%;
-        background-color: #0E142D;
-    }
-
+    
     #logo {
         height: 100%;
-        width: 50%;
-    }
-    
-    .title {
-        font-size: 2em;
-    }
-
-    .header-text {
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        align-items: center;
-        color: #0299A4;
-        margin: -2em auto auto 1em;
     }
 
     h1 {
         color: #0299A4;
-        margin-top: 1em;
-        font-size: 2em;
+        margin: 0;
+        padding: 5px 0 0 10px;
+    }
+    
+    .header-text {
+        font-size: small
+    }
+    
+    .title {
+        margin: 0;
     }
 
     .header-links {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
-        width: 18em;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+        text-align: right;
+        grid-column-start: grid-end;
+        padding: 0 10px 5px 0;
     }
-
+    
     body {
         display: flex;
         flex-direction: column;
