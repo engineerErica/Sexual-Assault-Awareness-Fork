@@ -297,9 +297,17 @@ footer {
         width: 50%;
     }
 
-    .title {
-        font-size: 2em;
-    }
+    /*.title {*/
+    /*    font-size: 2em;*/
+    /*}*/
+
+    /*.header-text {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    width: 100%;*/
+    /*    align-items: center;*/
+    /*    color: #0299A4;*/
+    /*    margin: 1.5em auto;*/
 
     .header-text {
         display: flex;
@@ -314,6 +322,11 @@ footer {
         display: flex;
         align-items: flex-end;
         justify-content: space-around;
+    }
+@media (max-width: 490px) {
+    
+    #logo {
+        height: 100%;
         width: 100%;
         padding: 5px 0 0;
     }
