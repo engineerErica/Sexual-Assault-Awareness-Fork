@@ -324,17 +324,10 @@ footer {
         margin-top: 1em;
         font-size: 2em;
     }
-
-    /*.header-links {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
-        width: 100%;
-        padding: 5px 0 0 10px;
-    }*/
     
     .title {
         margin: 0!important;
+        padding: 5px 0 0 10px;
     }
 
     .header-links {
@@ -344,6 +337,7 @@ footer {
         text-align: right;
         grid-column-start: grid-end;
         padding: 0 10px 5px 0;
+        font-size: large;
     }
     
     body {
