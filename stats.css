@@ -44,10 +44,6 @@ main {
     background-color: #233041;
 }
 
-h2 {
-    color: #bcb9ae;
-    text-align: center;
-}
 
 h3 {
     color: #bcb9ae;
@@ -127,6 +123,19 @@ p {
     border-radius: 30%;
 }
 
+article {
+    font-size: x-large
+}
+
+h2 {
+    color: #0299A4;
+    text-align: center;
+}
+
+.donate {
+    text-decoration: underline;
+}
+
 .footer {
     background-color: #0E142D;
     color: #BCB9AE;
@@ -185,6 +194,10 @@ p {
     section {
         display: block;
     }
+    
+    article {
+        margin-top: 2em;
+    }
 }
 
 @media(max-width: 800px) {
@@ -204,5 +217,9 @@ p {
     
     main {
         font-size: x-large;
+    }
+    
+    article {
+        font-size: large!important;
     }
 }
