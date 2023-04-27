@@ -278,16 +278,11 @@ footer {
 
     h1 {
         color: #0299A4;
-        margin: 0;
         padding: 5px 0 0 10px;
     }
     
-    .header-text {
-        font-size: small
-    }
-    
     .title {
-        margin: 0;
+        margin: 0!important;
     }
 
     .header-links {
