@@ -46,8 +46,8 @@ a {
 }
 
 main {
-    width: 100%;
-    height: 125%;
+    /*width: 100%;*/
+    /*height: 125%;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,6 +66,7 @@ p {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100%;
     padding: 11em 0em;
     background-color: #233041;
 }
@@ -184,40 +185,39 @@ p {
     width: 95%;
     background-color: #0E142D;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #A88C66;
     font-size: 1.549em;
     margin: 2.27em auto 2.7em;
     border-radius: 2em;
+    height: 100%;
 }
 
 .justice-text {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 34%;
-    margin-left: 5em;
+    width: 36%;
+    padding: 7% 0;
+    margin: auto 3em auto;
+    padding-bottom: 5%;
 }
 
 .lady-justice {
-    height: 100%;
     width: 65%;
-    margin-left: 5em;
     background-image: url(./images/ladyjustice.png);
     background-size: cover;
-    background-position: 40% 39.5%;
+    background-position: 40% 36.5%;
     border-radius: 2em;
     box-shadow: 1.5em 0 1.5em 0px #0E142D inset;
 }
 
 #not-alone {
-    height: 55em;
     width: 100%;
     background-color: #233041;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: -6em
 }
 
 #imgs-container {
@@ -287,6 +287,31 @@ footer {
     padding: 24px;
 }
 
+/*@media (max-width: 768px) {
+   /* header {
+        display: flex;
+        width: 102%;
+        height: 9%;
+        background-color: #0E142D;
+    }*/
+
+    /*#logo {
+        height: 100%;
+        width: 50%;
+    }*/
+
+    .title {
+        font-size: 2em;
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        color: #0299A4;
+        margin: 1.5em auto;
+*/
 @media (max-width: 490px) {
     
     #logo {
@@ -296,8 +321,17 @@ footer {
 
     h1 {
         color: #0299A4;
-        padding: 5px 0 0 10px;
+        margin-top: 1em;
+        font-size: 2em;
     }
+
+    /*.header-links {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        width: 100%;
+        padding: 5px 0 0 10px;
+    }*/
     
     .title {
         margin: 0!important;
@@ -315,8 +349,7 @@ footer {
     body {
         display: flex;
         flex-direction: column;
-        margin: auto;
-        height: 105em;
+        margin: 0;
         width: 100vw;
         background-color: #BCB9AE;
     }
@@ -333,7 +366,6 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100%;
         padding: 0;
     }
 
@@ -341,7 +373,7 @@ footer {
         margin-top: -8em;
         display: flex;
         align-items: center;
-        height: 90%;
+        height: 45%;
         justify-self: space-between;
         flex-direction: column;
         margin: 0;
@@ -362,12 +394,13 @@ footer {
         border-radius: 55%;
         margin-top: 1em;
         margin: 5px;
-        padding: 4.5em;
+        font-size: 2.5em;
+        padding: 2.5em;
         text-align: center;
     }
 
     #justice {
-        height: 95.5em;
+        height: 45.5em;
         width: 100%;
         background-color: #0E142D;
         display: flex;
@@ -390,7 +423,7 @@ footer {
         width: 100%;
         margin: auto;
         background-size: cover;
-        background-position: 46% 27.5%;
+        background-position: 46% 25.5%;
         box-shadow: 0 0 0.5em 0.5em #0E142D inset;
     }
 
@@ -414,10 +447,179 @@ footer {
     }
 
     footer {
-        padding-right: 1em;
+        padding-right: 2%;
         background-color: #0E142D;
         display: grid;
+        width: 100%;
         justify-content: flex-end;
+    }
+}
+
+@media screen and (min-device-width: 490) and (max-width: 769px) {
+    #pie {
+        font-size: 2em;
+    }
+
+    #stats-wrapper {
+        padding: 12em 0em;
+    }
+
+    .lady-justice {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background-size: cover;
+        background-position: 46% 27%;
+        box-shadow: 0 0 0.5em 0.5em #0E142D inset;
+    }
+
+}
+
+@media screen and (min-device-width: 570) and (max-width: 769px) {
+    .lady-justice {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background-size: cover;
+        background-position: 46% 27%;
+        box-shadow: 0 0 0.5em 0.5em #0E142D inset;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-width: 870px) {
+    #pie {
+        font-size: 63%;
+    }
+
+    .stats-blur {
+        height: 80%;
+        background-position: 46% 26%;
+    }
+
+    #stats-wrapper {
+        padding: 12em 0em;
+    }
+
+    #justice {
+        height: 45.5em;
+        width: 100%;
+        background-color: #0E142D;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        color: #A88C66;
+        font-size: 0.8em;
+    }
+
+    .justice-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        margin-left: 4em;
+    }
+
+    .lady-justice {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background-size: cover;
+        background-position: 46% 25%;
+        box-shadow: 0 0 0.5em 0.5em #0E142D inset;
+    }
+
+    .blurb-wrapper {
+        display: flex;
+        border-radius: 2em;
+        height: 14em;
+        width: 93%;
+        background-color: #0E142D;
+        color: #BCB9AE;
+        margin: 2em auto 2em auto;
+    }
+
+}
+
+@media screen and (min-device-width: 870px) and (max-width: 1000px) {
+    #pie {
+        font-size: 74%;
+    }
+
+    .stats-blur {
+        background-position: 70% 40.5%;
+    }
+
+    #stats-wrapper {
+        padding: 13em 0em;
+    }
+
+    #justice {
+        height: 45.5em;
+        width: 100%;
+        background-color: #0E142D;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        color: #A88C66;
+        font-size: 0.8em;
+    }
+
+    .justice-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        margin-left: 4em;
+    }
+
+    .lady-justice {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        background-size: cover;
+        background-position: 46% 24%;
+        box-shadow: 0 0 0.5em 0.5em #0E142D inset;
+    }
+
+    .blurb-wrapper {
+        display: flex;
+        border-radius: 2em;
+        height: 14em;
+        width: 93%;
+        background-color: #0E142D;
+        color: #BCB9AE;
+        margin: 2em auto 2em auto;
+    }
+
+}
+
+@media screen and (min-device-width: 1000px) and (max-device-width: 1100px) {
+    #pie {
+        font-size: 84%;
+    }
+}
+
+@media screen and (min-device-width: 1100px) and (max-device-width: 1200px) {
+    #pie {
+        font-size: 94%;
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1370px) {
+    #pie {
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-device-width: 1300px) and (max-device-width: 1370px) {
+    #pie {
+        font-size: 107%;
+    }
+}
+
+@media screen and (min-device-width: 1370px) and (max-device-width: 1440px) {
+    #pie {
+        font-size: 118%;
         margin-top: 16em;
     }
 }
