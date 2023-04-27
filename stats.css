@@ -67,7 +67,7 @@ section {
 }
 
 p {
-    /*background: #878c66;*/
+    background: #0E142D;
     box-shadow: 0 10px 10px #0299A4, 0 -10px 10px #0299A4;
     padding: 20px;
     align-self: center;
@@ -135,6 +135,7 @@ p {
     justify-content: flex-end;
     grid-template-columns: 1 / 3;
     grid-template-rows: 1 / 3;
+    padding-top: 1em;
 }
 
 .policy {
