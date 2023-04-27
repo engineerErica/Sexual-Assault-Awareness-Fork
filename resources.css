@@ -46,7 +46,12 @@ main {
 
 h2 {
     text-align: center;
-    color: #0299A4;
+    background: #0E142D;
+    box-shadow: 0 10px 10px #0299A4, 0 -10px 10px #0299A4;
+    border-radius: 30%;
+    margin: 0 10%;
+    padding: 3%;
+    color: #BCB9AE;
 }
 
 .box {
