@@ -39,7 +39,7 @@ a {
 }
 
 main {
-    padding-top: 1em;
+    padding: 1em;
     justify-content: center;
     background-color: #233041;
 }
