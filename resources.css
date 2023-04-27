@@ -7,7 +7,6 @@ html {
 header {
     display: grid;
     background-color: #0E142D;
-    /*justify-content: space-between;*/
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr
 }
@@ -18,22 +17,15 @@ header {
 }
 
 .header-text {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-    /*text-align: center;*/
     color: #0299A4;
     font-size: x-large;
 }
 
 .header-links {
-    /*font-size: x-large;*/
-    /*display: flex;*/
-    /*height: 15%;*/
-    /*width: 55%;*/
-    /*align-items: flex-end;*/
-    /*justify-content: space-around;*/
-    /*margin: auto auto 2em auto;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
 }
 
 a {
@@ -123,39 +115,26 @@ footer {
     margin: 0;
 }
 
-@media(max-width: 480px){
-        
-    header {
-        /*display: flex;*/
-        /*width: 102%;*/
-        /*height: 7%;*/
-        /*background-color: #0E142D;*/
-    }
+@media(max-width: 490px){
 
     #logo {
-        height: 80%;
-        width: 80%;
-    }
-
-    .header-text {
-        display: flex;
-        flex-direction: column;
-        /*width: 100%;*/
-        align-items: center;
-        color: #0299A4;
-
+        height: 100%;
+        width: 100%;
     }
 
     h1 {
         color: #0299A4;
         margin: 0;
+        padding: 5px 0 0 10px;
     }
 
     .header-links {
-        display: grid;
-        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
         gap: 5px;
-        text-align: center;
+        text-align: right;
+        grid-column-start: grid-end;
+        padding: 0 10px 5px 0;
     }
     
     .box > i {
@@ -168,19 +147,26 @@ footer {
     }
     
     main {
-        font-size: large;
+        font-size: medium!important;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 800px) {
+    
+    .header {
+        display: grid;
+    }
+    
     .header-text {
         font-size: large;
-        text-align: center;
     }
     
     .header-links {
-        display: grid;
-        text-align: center;
         gap: 5px;
+        
+    }
+    
+    main {
+        font-size: x-large;
     }
 }
