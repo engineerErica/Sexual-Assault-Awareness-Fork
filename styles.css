@@ -10,6 +10,7 @@ body {
     /*width: 100vw;*/
     /*height: 137em;*/
     background-color: #BCB9AE;
+    cursor: url(images/blue_ribbon.png), auto!important;
 }
 
 header {
