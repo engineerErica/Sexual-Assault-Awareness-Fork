@@ -247,8 +247,8 @@ h1 {
 .alone-blurb {
     margin: auto;
     color: #BCB9AE;
-    font-size: x-large;
-    padding: 20px;
+    font-size: 1em;
+    padding: 1.5em;
 }
 
 footer {
@@ -400,22 +400,22 @@ footer {
         box-shadow: 0 0 0.5em 0.5em #0E142D inset;
     }
 
-    .blurb-wrapper {
-        display: flex;
-        border-radius: 2em;
-        height: 14em;
-        width: 93%;
-        background-color: #0E142D;
-        color: #BCB9AE;
-        margin: 2em auto 2em auto;
-    }
+    /*.blurb-wrapper {*/
+    /*    display: flex;*/
+    /*    border-radius: 2em;*/
+    /*    height: 14em;*/
+    /*    width: 93%;*/
+    /*    background-color: #0E142D;*/
+    /*    color: #BCB9AE;*/
+    /*    margin: 2em auto 2.3em auto;*/
+    /*}*/
 
-    .alone-blurb {
-        margin: auto;
-        color: #BCB9AE;
-        font-size: 1em;
-        margin: 0.5em;
-    }
+    /*.alone-blurb {*/
+    /*    margin: auto;*/
+    /*    color: #BCB9AE;*/
+    /*    font-size: 1em;*/
+    /*    margin: 0.5em;*/
+    /*}*/
 
     .header-links {
         display: flex;
@@ -552,7 +552,17 @@ footer {
     }
 }
 
-@media screen and (min-device-width: 490) and (max-width: 769px) {
+@media screen and (min-device-width: 490) and (max-width: 560px) {
+    .blurb-wrapper {
+        margin: 0.5em 0;
+    }
+
+    .alone-blurb {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-device-width: 560) and (max-width: 769px) {
     header {
         display: flex;
         width: 100%;
@@ -615,37 +625,42 @@ footer {
         box-shadow: 0 0 0.5em 0.5em #0E142D inset;
     }
 
+    .alone-blurb {
+        font-size: 1.5em;
+    }
+
+
 }
 
-@media screen and (min-device-width: 570) and (max-width: 769px) {
-    #justice {
-        height: 45.5em;
-        width: 100%;
-        background-color: #0E142D;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        color: #A88C66;
-        font-size: 0.8em;
-    }
+/*@media screen and (min-device-width: 570) and (max-width: 769px) {*/
+/*    #justice {*/
+/*        height: 45.5em;*/
+/*        width: 100%;*/
+/*        background-color: #0E142D;*/
+/*        display: flex;*/
+/*        flex-direction: column-reverse;*/
+/*        justify-content: space-around;*/
+/*        color: #A88C66;*/
+/*        font-size: 0.8em;*/
+/*    }*/
 
-    .justice-text {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 80%;
-        margin-left: 4em;
-    }
+/*    .justice-text {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        text-align: center;*/
+/*        width: 80%;*/
+/*        margin-left: 4em;*/
+/*    }*/
 
-    .lady-justice {
-        height: 100%;
-        width: 100%;
-        margin: auto;
-        background-size: cover;
-        background-position: 46% 25.5%;
-        box-shadow: 0 0 0.5em 0.5em #0E142D inset;
-    }
-}
+/*    .lady-justice {*/
+/*        height: 100%;*/
+/*        width: 100%;*/
+/*        margin: auto;*/
+/*        background-size: cover;*/
+/*        background-position: 46% 25.5%;*/
+/*        box-shadow: 0 0 0.5em 0.5em #0E142D inset;*/
+/*    }*/
+/*}*/
 
 @media screen and (min-device-width: 769px) and (max-width: 870px) {
     #pie {
@@ -762,6 +777,13 @@ footer {
     #stats-wrapper {
         padding: 12em 0em;
     }
+    
+    .alone-blurb {
+        margin: auto;
+        color: #BCB9AE;
+        font-size: 1.5em;
+        padding: 1em;
+    }
 }
 
 @media screen and (min-device-width: 1100px) and (max-device-width: 1200px) {
@@ -771,6 +793,13 @@ footer {
 
     #stats-wrapper {
         padding: 12em 0em;
+    }
+    
+    .alone-blurb {
+        margin: auto;
+        color: #BCB9AE;
+        font-size: 1.5em;
+        padding: 1.3em;
     }
 }
 
@@ -782,11 +811,25 @@ footer {
     #stats-wrapper {
         padding: 12em 0em;
     }
+    
+    .alone-blurb {
+        margin: auto;
+        color: #BCB9AE;
+        font-size: 1.5em;
+        padding: 1.3em;
+    }
 }
 
 @media screen and (min-device-width: 1300px) and (max-device-width: 1370px) {
     #pie {
         font-size: 107%;
+    }
+    
+    .alone-blurb {
+        margin: auto;
+        color: #BCB9AE;
+        font-size: 1.5em;
+        padding: 1.5em;
     }
 }
 
@@ -799,6 +842,13 @@ footer {
     #stats-wrapper {
         padding: 2em 0em;
     }
+
+    .alone-blurb {
+        margin: auto;
+        color: #BCB9AE;
+        font-size: 1.5em;
+        padding: 1.7em;
+    }
 }
 
 @media(max-width: 800px) {
@@ -806,21 +856,24 @@ footer {
     .header {
         display: grid;
     }
-
-    .header-text {
-        font-size: small !important;
-        text-align: left;
+    
+    .title {
+        text-align: center;
+        margin: 0;
+        padding: 15px;
     }
 
     .header-links {
         gap: 5px;
+        text-align: center;
+        font-size: large;
     }
 
-    p {
+    .justice-blurb {
         font-size: large
     }
 
-    .alone-blurb {
-        font-size: large
-    }
+    /*.alone-blurb {*/
+    /*    font-size: large*/
+    /*}*/
 }
