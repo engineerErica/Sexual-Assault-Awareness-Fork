@@ -68,7 +68,8 @@ h2 {
 }
 
 .box a {
-    text-decoration: underline;
+    text-decoration: underline !important;
+    color: #0299A4;
 }
 
 h3 {
@@ -93,9 +94,8 @@ p {
     color: #BCB9AE;
 }
 
-.p-link {
-    text-decoration: underline;
-    color: #0299A4;
+a:visited {
+    color: #BCB9AE;
 }
 
 footer {
