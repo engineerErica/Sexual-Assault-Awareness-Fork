@@ -185,14 +185,16 @@ h2 {
     h1 {
         color: #0299A4;
         margin: 0;
-        padding: 5px 0 0 10px;
+        padding: 5px 0 0 10px !important;
+        font-size: larger;
+        text-align: left!important;
     }
 
     .header-links {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         gap: 5px;
-        text-align: right;
+        text-align: right!important;
         grid-column-start: grid-end;
         padding: 0 10px 5px 0;
     }
@@ -206,23 +208,28 @@ h2 {
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 770px) {
     
     .header {
         display: grid;
     }
     
-    .header-text {
-        font-size: large;
+    .title {
+        text-align: center;
     }
     
     .header-links {
         gap: 5px;
-        
+        text-align: center;
+        font-size: large;
     }
     
     main {
-        font-size: x-large;
+        font-size: large;
+    }
+    
+    section {
+        display: block;
     }
     
     article {

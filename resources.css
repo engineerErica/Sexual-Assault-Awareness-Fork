@@ -26,6 +26,11 @@ header {
     font-size: x-large;
 }
 
+.title {
+    margin: 0;
+    padding: .25em 0;
+}
+
 .header-links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -50,7 +55,7 @@ h2 {
     box-shadow: 0 10px 10px #0299A4, 0 -10px 10px #0299A4;
     border-radius: 30%;
     margin: 0 10%;
-    padding: 3%;
+    padding: 5%;
     color: #BCB9AE;
 }
 
@@ -130,14 +135,16 @@ footer {
     h1 {
         color: #0299A4;
         margin: 0;
-        padding: 5px 0 0 10px;
+        padding: 5px 0 0 10px !important;
+        font-size: larger;
+        text-align: left!important;
     }
 
     .header-links {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         gap: 5px;
-        text-align: right;
+        text-align: right!important;
         grid-column-start: grid-end;
         padding: 0 10px 5px 0;
     }
@@ -156,21 +163,27 @@ footer {
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 770px) {
     
     .header {
         display: grid;
     }
     
-    .header-text {
-        font-size: large;
+    .title {
+        text-align: center;
     }
     
     .header-links {
         gap: 5px;
+        text-align: center;
+        font-size: large;
     }
     
     main {
-        font-size: x-large;
+        font-size: medium;
+    }
+    
+    footer {
+        font-size: small;
     }
 }

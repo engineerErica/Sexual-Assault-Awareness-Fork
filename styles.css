@@ -624,17 +624,16 @@ footer {
         display: grid;
     }
     
-    .header-text {
-        font-size: small!important;
-        text-align: left;
-    }
-    
     .title {
-        margin: 24px 0;
+        text-align: center;
+        margin: 0;
+        padding: 15px;
     }
     
     .header-links {
         gap: 5px;
+        text-align: center;
+        font-size: large;
     }
     
     p {
