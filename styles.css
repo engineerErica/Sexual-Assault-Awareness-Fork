@@ -855,14 +855,17 @@ footer {
     .header {
         display: grid;
     }
-
-    .header-text {
-        font-size: small !important;
-        text-align: left;
+    
+    .title {
+        text-align: center;
+        margin: 0;
+        padding: 15px;
     }
 
     .header-links {
         gap: 5px;
+        text-align: center;
+        font-size: large;
     }
 
     .justice-blurb {
