@@ -83,13 +83,9 @@ p {
     color: #BCB9AE;
 }
 
-a {
-    text-decoration: none;
+.p-link {
+    text-decoration: underline;
     color: #0299A4;
-}
-
-a:visited {
-    color: #BCB9AE;
 }
 
 footer {
